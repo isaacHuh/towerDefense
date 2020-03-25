@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelGenerator/LevelGenerator.cs">
     <Files>
-      <File FileName="Assets/Scripts/Enemy.cs" Line="27" Column="61" />
-      <File FileName="Assets/Scripts/PlayerManager.cs" Line="20" Column="34" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="12" Column="30" />
+      <File FileName="Assets/Scripts/PlayerManager.cs" />
       <File FileName="Assets/Scripts/EnemyControl.cs" />
       <File FileName="Assets/Scripts/WaypointManager.cs" />
       <File FileName="Assets/Scripts/Waypoint.cs" />
       <File FileName="Assets/Scripts/Bullet.cs" />
       <File FileName="Assets/Scripts/WeaponFSM.cs" />
+      <File FileName="Assets/Scripts/LevelGenerator/LevelGenerator.cs" Line="40" Column="56" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +16,9 @@
           <Node name="TowerDefense" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlayerManager.cs" selected="True" />
+                <Node name="LevelGenerator" expanded="True">
+                  <Node name="LevelGenerator.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -25,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d9f9957c-4119-4ad5-9b43-de4e8536e748" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3f4f3889-58e3-4001-8bfb-5cd6c25b26d1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
