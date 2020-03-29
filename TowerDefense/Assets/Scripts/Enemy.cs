@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Enemy : MonoBehaviour
     public float speed = 1;
     public float hp = 1.0f;
     public float damage = 0.5f;
+    public GameObject hpBar;
 
     public void Initialize(WaypointManager waypointManager)
     {
@@ -21,7 +23,8 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        
+        hpBar.GetComponent<Image>().fillAmount = hp;
+
         if (hp <= 0f) {
             GameObject player = GameObject.Find("Player");
             player.GetComponent<PlayerManager>().purse += 5f;
