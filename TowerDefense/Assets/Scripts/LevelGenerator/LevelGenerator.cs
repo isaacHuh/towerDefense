@@ -37,7 +37,7 @@ public class LevelGenerator : MonoBehaviour {
             Debug.Log("colorMapping.color: " + colorMapping.color + " color: " + pixelColor);
 			if (colorMapping.color.Equals(pixelColor))
 			{
-				Vector3 position = new Vector3(x-26.5f, -1, y-17.5f);
+				Vector3 position = new Vector3(x, -1, y);
 				Instantiate(colorMapping.prefab, position, Quaternion.identity);
 			}
 		}

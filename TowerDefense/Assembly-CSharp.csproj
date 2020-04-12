@@ -65,15 +65,20 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\EnemyControl.cs" />
+    <Compile Include="Assets\Scripts\DefenseScripts\Defense.cs" />
+    <Compile Include="Assets\Scripts\DefenseScripts\DefenseCollision.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\EnemyCollision.cs" />
+    <Compile Include="Assets\Scripts\EnemyScripts\EnemyControl.cs" />
     <Compile Include="Assets\Scripts\LevelGenerator\ColorToPrefab.cs" />
     <Compile Include="Assets\Scripts\LevelGenerator\LevelGenerator.cs" />
+    <Compile Include="Assets\Scripts\MoveControl.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Waypoint.cs" />
     <Compile Include="Assets\Scripts\WaypointManager.cs" />
     <Compile Include="Assets\Scripts\WeaponFSM.cs" />
+    <None Include="Assets\Polygonal Particles\Assets\Shaders\GradientBackgroundShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/isaactorres/Desktop/cst326/towerDefense/TowerDefense/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

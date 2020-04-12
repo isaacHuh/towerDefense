@@ -37,6 +37,10 @@ public class EnemyManager : MonoBehaviour
   public float timeToWaitB = 1.5f;
   public Wave currentWave;
 
+    int totalEnemies = 0;
+    int spawnedEnemies = 0;
+    bool checkingDone = false;
+
   public WaypointManager waypointManager;
 
   void Start()
@@ -51,12 +55,24 @@ public class EnemyManager : MonoBehaviour
     SpawnWave(currentWave);
   }
 
-  private void SpawnWave(Wave newWave)
+    void Update()
+    {
+        if (checkingDone)
+        {
+            if (totalEnemies == spawnedEnemies) {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    private void SpawnWave(Wave newWave)
   {
     foreach (Group group in newWave.enemyGroups)
     {
+      totalEnemies += group.numberOfEnemies;
       StartCoroutine(SpawnGroup(group));
     }
+    checkingDone = true;
   }
 
   //private IEnumerator SpawnWave(Wave newWave)
@@ -75,6 +91,7 @@ public class EnemyManager : MonoBehaviour
       GameObject enemy = Instantiate(@group.enemy);
       enemy.GetComponent<Enemy>().Initialize(waypointManager);
       @group.numberOfEnemies--;
+       spawnedEnemies++;
     }
   }
 }

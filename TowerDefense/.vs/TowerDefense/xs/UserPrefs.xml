@@ -1,15 +1,20 @@
 ﻿<Properties StartupConfiguration="{17BB7AF0-A1AD-DCE4-09CE-1D3A3635465B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Enemy.cs" Line="26" Column="53" />
-      <File FileName="Assets/Scripts/PlayerManager.cs" Line="36" Column="38" />
-      <File FileName="Assets/Scripts/EnemyControl.cs" />
+      <File FileName="Assets/Scripts/EnemyScripts/Enemy.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/PlayerManager.cs" Line="29" Column="39" />
       <File FileName="Assets/Scripts/WaypointManager.cs" />
       <File FileName="Assets/Scripts/Waypoint.cs" />
-      <File FileName="Assets/Scripts/Bullet.cs" />
       <File FileName="Assets/Scripts/WeaponFSM.cs" />
       <File FileName="Assets/Scripts/LevelGenerator/LevelGenerator.cs" />
-      <File FileName="Assets/Scripts/Block.cs" Line="26" Column="71" />
+      <File FileName="Assets/Scripts/Block.cs" />
+      <File FileName="Assets/Scripts/Bullet.cs" />
+      <File FileName="Assets/Scripts/EnemyScripts/EnemyControl.cs" />
+      <File FileName="Assets/Scripts/EnemyScripts/EnemyCollision.cs" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="63" Column="37" />
+      <File FileName="Assets/Scripts/DefenseScripts/DefenseCollision.cs" />
+      <File FileName="Assets/Scripts/DefenseScripts/Defense.cs" />
+      <File FileName="Assets/Scripts/MoveControl.cs" Line="9" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,8 +22,10 @@
           <Node name="TowerDefense" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
+                <Node name="DefenseScripts" expanded="True" />
+                <Node name="EnemyScripts" expanded="True" />
                 <Node name="LevelGenerator" expanded="True" />
-                <Node name="PlayerManager.cs" selected="True" />
+                <Node name="EnemyManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -28,7 +35,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e7db4a0e-409b-42c7-99da-b0ac976c9f71" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2a61bed3-bed7-43db-ab67-77120422e748" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
